@@ -1,0 +1,54 @@
+
+\documentclass[letterpaper,12pt]{article}
+
+
+\usepackage{fullpage} % Package to use full page
+\usepackage{parskip} % Package to tweak paragraph skipping
+\usepackage{tikz} % Package for drawing
+\usepackage{mathtools}
+\usepackage{hyperref}
+\usepackage{amsfonts}
+\usepackage{fancyhdr}
+\usepackage{times}
+\usepackage{changepage}
+\usepackage{amssymb}
+\usepackage{amsthm}
+\usepackage[english]{babel}
+\usepackage{graphicx}
+\theoremstyle{plain}
+\newtheorem{theorem}{Theorem}
+\usepackage{ragged2e}
+\usepackage{comment}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+%\usepackage{blindtext, fontspec, setspace}
+\usepackage[margin=2cm]{geometry}
+%\geometry{textwidth=7cm}
+
+
+%\usepackage{tgbonum}
+%\usepackage{lmodern}
+\usepackage{charter}
+%\setmainfont{courier}
+%\usepackage{mathptmx}
+
+
+\title{Project Proposal on Cerner Health Facts \vspace{-2em}}
+\date{\vspace{-5ex}}
+%\author{Siva Kumar}
+\begin{document}
+
+\maketitle
+\begin{center}
+\section*{University of Missouri, Kansas City}
+
+\justifying Data collection is one of the primary keys of public health systems which influence  on decision makers, policy makers and health service providers to accomplish accurate and timely data in order to improve the quality of their services. This proposal helpful to review and understand the data collection systems and provide feasible solutions for clinical experts to detect diseases before in hand and possible to avoid admitting patients in the hospital. We further propose  open source data collection frameworks to test their feasibility in improving the health data collection in the developing world context. In recent years, Natural Language Processing has been evolving in solving problems for medical health care based on collection of data either structured or unstructured one. Compared to structured features, clinical notes (unstructured features) provide a greater exposure of the patient since they describe about symptoms, reasons for diagnoses, radiology results, daily activities, and patient history which includes surgical information, lab test report etc. Our goal is to create a framework for modeling clinical notes that can expose clinical perceptions and perform medical predictions.
+
+ \hspace{1cm} In this framework, we will focus on implementing ClinicalBERT on unstructured data which is an extension of BERT(Bidirectional Encoder Representations from Transformers) model where BERT \cite{DBLP:journals/corr/abs-1810-04805} is a technique for NLP pre-trained model developed by Google AI. BERT is trained on BooksCorpus and Wikipedia. However, these two data sets are distinct from clinical notes, where jargon and abbreviations are common and notes have different syntax and grammar than common language in books or encyclopedias.  It is hard to understand clinical notes without professional training. ClinicalBERT is pre-trained model trained on clinical notes \cite{DBLP:journals/corr/abs-1904-05342}. ClinicalBERT learns deep representations of clinical text. These deep representations can be used to expose clinical perceptions, such as predictions of disease, relationships between treatments and outcomes, or summaries of large volume of texts. Clinical notes require capturing interactions between distant words. Designing a model for long-range structure makes clinical notes suitable for contextual representations like in the bidirectional encoder representations from transformers (BERT) model \cite{DBLP:journals/corr/abs-1810-04805}.
+\end{center}
+
+\bibliographystyle{plain}
+
+\bibliography{mybib}
+
+\end{document}
